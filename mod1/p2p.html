@@ -2,6 +2,10 @@
     <head>
         <title>Secciones y líneas generales de un documento HTML5.</title>
         <meta charset="utf-8">
+		<style>
+			ul {
+				list-style:none;}
+		</style>
     </head>
     <body>
         <h1>Secciones y líneas generales de un documento HTML5
@@ -30,5 +34,38 @@
 		<h4>Definiendo secciones en HTML5</h4>
 		
 		<p>Todo el contenido incluido dentro del elemento &ltbody&gt es parte de una sección. Las secciones en HTML5 pueden ser anidadas. Además de la sección principal, definida por el elemento &ltbody&gt, los límites de la sección son definidos explícita o implícitamente. La secciones definidas explícitamente son el contenido definido en las etiquetas &ltbody&gt, &ltsection&gt, &ltarticle&gt, &ltaside&gt, &ltfooter&gt, &ltheader&gt, y &ltnav&gt. Nota: Cada sección puede tener su propia jerarquía de cabeceras. Por lo tanto, incluso una sección anidada puede tener un elemento &lth1&gt. Consulte también Definiendo cabeceras en HTML5.</p>
+
+		<strong>Ejemplo:</strong>
+
+		<ul>
+			<li>&lt;section&gt;</li>
+			<ul>
+				<li>&lt;h1&gt;Forest elephants&lt;/h1&gt;</li>
+				<li>&lt;section&gt;</li>
+				<ul>
+					<li>&lt;h1&gt;Introduction&lt;/h1&gt;</li>
+					<li>&lt;p&gt;In this section, we discuss the lesser known forest elephants.</li>
+					</ul>
+					<li>&lt;/section&gt;</li>
+					<li>&lt;section&gt;</li>
+						<ul>
+							<li>&lt;h1&gt;Habitat&lt;/h1&gt;</li>
+							<li>&lt;p&gt;Forest elephants do not live in trees but among them.</li>
+						</ul>
+							<li>&lt;/section&gt;</li>
+							<li>&lt;aside&gt;</li>
+						<ul>
+							<li>&lt;p&gt;advertising block</li>
+						</ul>
+					<li>&lt;/aside&gt;</li>
+					</ul>
+				<li>&lt;/section&gt;</li>
+				<li>&lt;footer&gt;</li>
+				<ul>
+				<li>&lt;p&gt;(c) 2010 The Example company</li>
+			</ul>
+			<li>&lt;/footer&gt;</li>
+		</ul>
+
     </body>
-</html>
+</html>
